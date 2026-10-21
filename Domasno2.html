@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Контролен панел за паметен дом</title>
+        <link rel="stylesheet" href="domasnocss2.css">
+    </head>
+
+    <body>
+        <header><h1>Контролен панел за паметен дом</h1></header>
+            <p class="meni">
+                <a class="link" href="#spalna"><strong>Спална</strong></a>
+                <a class="link" href="#dnevna"><strong>Дневна</strong></a>
+                <a class="link" href="#kujna"><strong>Кујна</strong></a>
+                <a class="link" href="#gradina"><strong>Градина</strong></a>
+                <a class="link" href="#notifikacii"><strong>Нотификации</strong></a>
+            </p>
+
+        <section id="spalna">
+            <h2>Спална</h2>
+
+            <article class="senzor">
+                <h3>Сензор за температура</h3>
+                <p>Температура: 22&deg;C</p>
+                <p>Статус на сензор: <em>Вклучен</em></p>
+                <p>Батерија: <strong>75%</strong></p>
+                <p>Дозволен опсег: 20 - 24 &deg;C</p>
+            </article>
+            <article class="senzor">
+                <h3>Сензор за влажност</h3>
+                <p>Влажност:
+                    <select>
+                        <option>55%</option>
+                    </select>
+                </p>
+                <p>Статус на сензор: <em>Вклучен</em></p>
+                <p>Батерија: <strong>49%</strong></p>
+                <p>Дозволен опсег: 30 - 65 %</p>
+            </article>
+            <article class="senzor">
+                <h3>Сензор за осветленост</h3>
+                <p>
+                    Осветленост: <input type="range" min="0" max="100" value="35" disabled> 
+                </p>
+                <p>Статус на сензор: <em>Вклучен</em></p>
+                <p>Батерија: <strong>87%</strong></p>
+                <p>Дозволен опсег: 0 - 50 lx</p>
+            </article>
+        </section>
+        <br>
+
+        <section id="dnevna">
+            <h2>Дневна</h2>
+
+            <article class="senzor">
+                <h3>Сензор за температура:</h3>
+                <p>
+                    Температура: <input type="number" value="26" disabled> &deg;C
+                </p>
+                <p>Статус на сензор: <em>Вклучен</em></p>
+                <p>Батерија: <strong>20%</strong></p>
+                <p>Дозволен опсег: 20 - 24 &deg;C</p>
+            </article>
+            <article class="senzor">
+                <h3>Сензор за движење</h3>
+                <p>
+                    Движење: <input type="checkbox" checked disabled> Детектирано
+                </p>
+                <p>Статус на сензор: <em>Вклучен</em></p>
+                <p>Батерија: <strong>45%</strong></p>
+                <p>Дозволенa состојба: Нема движење</p>
+            </article>
+            <article class="senzor">
+                <h3>Сензор за CO<sub>2</sub></h3>
+                <p>
+                    CO<sub>2</sub>: <input type="text" value="1200" disabled>
+                </p>
+                <p>Статус на сензор: <em>Вклучен</em></p>
+                <p>Батерија: <strong>78%</strong></p>
+                <p>Дозволен опсег: 400 - 1000</p>
+            </article>
+        </section>
+        <br>
+
+        <section id="kujna">
+            <h2>Кујна</h2>
+
+            <article class="senzor">
+                <h3>Сензор за чад</h3>
+                <table border="1">
+                    <tr>
+                        <th>Податок</th>
+                        <th>Вредност</th>
+                    </tr>
+                    <tr>
+                        <td>Чад</td>
+                        <td>Детектиран</td>
+                    </tr>
+                    <tr>
+                        <td>Статус на сензор</td>
+                        <td>Вклучен</td>
+                    </tr>
+                    <tr>
+                        <td>Батерија</td>
+                        <td>70%</td>
+                    </tr>
+                    <tr>
+                        <td>Дозволенa состојба</td>
+                        <td>Нема чад</td>
+                    </tr>
+                </table>
+            </article>
+            <article class="senzor">
+                <h3>Сензор за состојба на фрижидер</h3>
+                <p>
+                    <input type="radio" name="frizider" value="vklucen" checked> Вклучен
+                    <input type="radio" name="frizider" value="isklucen" disabled> Исклучен
+                </p>
+                <p>Статус на сензор: <em>Вклучен</em></p>
+                <p>Батерија на сензор: <strong>95%</strong></p>
+                <p>Дозволена состојба: Фрижидерот е вклучен</p>
+            </article>
+            <article class="senzor">
+                <h3>Сензор за потрошена електрична енергија</h3>
+                <ul>
+                    <li>Потрошена електрична енергија (денес): 18 kWh</li>
+                    <li>Статус на сензор: <em>Вклучен</em></li>
+                    <li>Батерија: <strong>20%</strong></li>
+                    <li>Дозволен дневен опсег: 0 - 15 kWh</li>
+                </ul>
+            </article>
+        </section>
+        <br>
+
+        <section id="gradina">
+            <h2>Градина</h2>
+            <article class="senzor">
+                <h3>Сензор за влажност на почва</h3>
+                <p>Влажност: 25%</p>
+                <p>Статус на сензор: <em>Вклучен</em></p>
+                <p>Батерија: <strong>100%</strong></p>
+                <p>Дозволен опсег: 30 - 70%</p>
+            </article>
+            <article class="senzor">
+                <h3>Сензор за брзина на ветер</h3>
+                <ol>
+                    <li>Брзина на ветер: 42 km/h</li>
+                    <li>Статус на сензор: <em>Вклучен</em></li>
+                    <li>Батерија: <strong>65%</strong></li>
+                    <li>Дозволен опсег: 0 - 35 km/h</li>
+                </ol>
+            </article>
+            <article class="senzor">
+                <h3>Сензор за дожд</h3>
+                <p>
+                    Дожд: <input type="checkbox" checked disabled> Детектиран
+                    <input type="checkbox" disabled> Не е детектиран
+                </p>
+                <p>Статус на сензор: <em>Вклучен</em></p>
+                <p>Батерија: <strong>76%</strong></p>
+                <p>Дозволена состојба: Нема дожд</p>
+            </article>
+        </section>
+        <br>
+
+        <section id="notifikacii">
+            <h2>Нотификации</h2>
+
+            <h3>Дневна</h3>
+            <details class="notifikacija">
+                <summary>
+                    Висока температура
+                </summary>
+                <p>
+                    Температурата во дневната е 26 &deg;C.
+                    Дозволен опсег: 20 - 24 &deg;C.
+                </p>
+            </details>
+            <details class="notifikacija">
+                <summary>Детектирано движење</summary>
+                <p>
+                    Детектирано е движење во дневната соба.
+                    Дозволенa состојба: Нема движење.
+                </p>
+            </details>
+            <details class="notifikacija">
+                <summary>Високо ниво на CO<sub>2</sub></summary>
+                <p>
+                    Нивото на CO<sub>2</sub> во дневната е 1200.
+                    Дозволен опсег: 400 - 1000.
+                </p>
+            </details>
+
+            <h3>Кујна</h3>
+            <details class="notifikacija">
+                <summary>Детектиран чад</summary>
+                <p>
+                    Детектиран е чад во кујната.
+                    Дозволена состојба: Нема чад.
+                </p>
+            </details>
+            <details class="notifikacija">
+                <summary>Зголемена потрошувачка на електрична енергија</summary>
+                <p>
+                    Денес се потрошени 18 kWh електрична енергија.
+                    Дозволен дневен опсег: 0 - 15 kWh.
+                </p>
+            </details>
+
+            <h3>Градина</h3>
+            <details class="notifikacija">
+                <summary>Ниска влажност на почвата</summary>
+                <p>
+                    Влажноста на почвата е 25%.
+                    Дозволен опсег: 30 - 70%.
+                </p>
+            </details>
+            <details class="notifikacija">
+                <summary>Силен ветер</summary>
+                <p>
+                    Брзината на ветерот е 42 km/h.
+                    Дозволен опсег: 0 - 35 km/h.
+                </p>
+            </details>
+            <details class="notifikacija">
+                <summary>Детектиран дожд</summary>
+                <p>
+                    Детектиран е дожд.
+                    Дозволена состојба: Нема дожд.
+                </p>
+            </details>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+body{
+    background-color: aliceblue;
+    font-family: Arial, sans-serif;
+    color: darkslategray;
+    margin: 0;
+}
+
+header{
+    background: linear-gradient(to right, steelblue, midnightblue);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 130%;
+}
+
+.meni{
+    text-align: center;
+    padding: 20px;
+    font-size: 22px;
+}
+
+a.link{
+    color:midnightblue;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+section{
+    background-color: white;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: -4px 4px 12px lightsteelblue;
+}
+
+h2{
+    color: midnightblue;
+    border-bottom: 2px solid lightsteelblue;
+    padding-bottom: 10px;
+}
+
+.senzor{
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 8px;
+}
+
+.notifikacija{
+    background-color: mistyrose;
+    border-left: 3px solid indianred;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+.notifikacija p {
+    margin: 10px 0 0 0;
+}
